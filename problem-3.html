@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function firstIntOut(arr) { 
+            for (var i = 0 ; i <= arr.length; i++) {
+                if (arr[i] !== i + 1) { // if the number at the index of the array is not equal to the index + 1
+                    return i + 1; // return the missing number
+                }
+            }
+        }
+        console.log(firstIntOut([1,2,5]));
+        console.log(firstIntOut([1,2,3,4,5]));
+        console.log(firstIntOut([3,4,5]));
+    </script>
+
+</body>
+</html>

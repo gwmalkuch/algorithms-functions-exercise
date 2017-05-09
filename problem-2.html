@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function leapYear(year) {
+            if (year % 100 === 0 && year % 400 !== 0) { //if year is divisible by 0 and not divisible by 400
+                return false;
+            }
+            if (year % 4 === 0) { //if year is divisible by 4
+                return "true";
+            } else {
+                return "false";
+            }
+        }
+
+        console.log(leapYear(1942));
+        console.log(leapYear(2000));
+        console.log(leapYear(1900));
+        console.log(leapYear(2016));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sameValue(arr, arr2) {
+            if (arr.sort().join() === arr2.sort().join()) { //compares strings of both arrays to one another in order
+                return "true";
+            }
+            return "false";
+        }
+
+        console.log(sameValue([], []));
+        console.log(sameValue([2, 3, 4], [1, 2, 3]));
+        console.log(sameValue(["a", "c", "b"], ["a", "b", "c"]));
+        console.log(sameValue([1, 1, 1], [1, 1, 1, 1]));
+    </script>
+</body>
+</html>

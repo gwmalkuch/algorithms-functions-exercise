@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function removeDup(arr) {
+            var fix = [];
+            for (var i = 0; i < arr.length; i++) {
+                if (fix.indexOf(arr[i]) === -1) { //if indexOf arr is equal to -1
+                    fix.push(arr[i]); //pushes i out 
+                }
+            }
+            console.log(fix);
+        }
+
+        removeDup([1,1,2,3,1,2,3]);
+        removeDup([1,4,4,4,2,2,4,4,4]);
+    </script>
+</body>
+</html>
